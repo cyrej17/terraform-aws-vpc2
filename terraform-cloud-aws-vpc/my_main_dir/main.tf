@@ -1,4 +1,7 @@
 # main.tf
+provider "aws" {
+  region = "ap-northeast-1"
+}
 
 module "my_vpc" {
   source               = "../module"
